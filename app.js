@@ -17,8 +17,9 @@ class Sidebar extends React.Component {
 class TopPart extends React.Component {
     render() {
         return (
-            <div className={this.props.text}>
-               <p>{this.props.count}</p>
+            <div className="topPart">
+                <p>{this.props.text}</p>
+                <p>{this.props.count}</p>
             </div>
         )
     }
@@ -28,6 +29,7 @@ class MainPart extends React.Component {
     render() {
         return (
             <div className="mainPart">Website Visitors
+                <p>{this.props.count}</p>
                 <div>
                     <MainPartInside/>
                 </div>
@@ -47,14 +49,13 @@ class MainPartInside extends React.Component {
 
 class App extends React.Component {
     render() {
-        // let arr = ["String1", "String2"] 
         return (
             <div className="allParts">
             <Sidebar/>
             <TopPart text="Reviews" count="1,281"/>
             <TopPart text="Average Rating" count="4.6"/>
-            <TopPart text="Sentiment Analysis" count="960,122,321"/>
-            <MainPart/>
+            <TopPart text="Sentiment Analysis" count="960 122 321"/>
+            <MainPart count="821"/>
             </div>
         )
     }
