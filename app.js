@@ -54,7 +54,8 @@ class App extends React.Component {
             <Sidebar/>
             <TopPart text="Reviews" count="1,281"/>
             <TopPart text="Average Rating" count="4.6"/>
-            <TopPart text="Sentiment Analysis" count="960 122 321"/>
+            <TopPart id="topPart3" text="Sentiment Analysis" count="960,122,321"/>
+
             <MainPart count="821"/>
             </div>
         )

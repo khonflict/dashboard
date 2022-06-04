@@ -8,6 +8,7 @@
     font-size: 1.5rem;
     color: whitesmoke;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .sidebar {
@@ -18,14 +19,15 @@
 }
 
 .mainPart {
-    background-color: teal;
     grid-column: 2/5;
+    background-color: teal;
+    padding-top: 2rem;
 }
 
 .mainPartInside {
     background-color: whitesmoke;
-    width: 75%;
-    height: 10rem;
+    width: 70%;
+    height: 9rem;
     margin: auto;
     margin-top: 2rem;
     
@@ -33,4 +35,10 @@
 
 .topPart {
     background-color: lightblue;    
+}
+
+#topPart3 {
+    display: flex;
+    flex-direction: column;
+    border: solid red;
 }
